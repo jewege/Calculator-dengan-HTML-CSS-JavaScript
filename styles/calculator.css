@@ -1,0 +1,105 @@
+*{
+      box-sizing: border-box;
+}
+
+body{
+      font-family: sans-serif;
+}
+
+.flex-container-column{
+      max-width: 800px;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      text-align: right;
+}
+
+.card{
+      box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      padding: 30px;
+      margin-top: 20px;
+}
+
+.display{
+      color: white;
+      width: 100%;
+      padding: 10px 20px;
+      background-color: #333333;
+      border: 1px solid black;
+      font-size: 2em;
+}
+
+.flex-container-row{
+      display: flex;
+      flex-direction: row;
+}
+
+.button{
+      flex-basis: 25%;
+      font-size: 1.5em;
+      text-align: center;
+      padding: 40px;
+      border: 1px solid black;
+      background: -webkit-linear-gradient(top, #d2d2d2, #ddd);
+      cursor: pointer;
+}
+
+.button:hover{
+      font-weight: bold;
+}
+
+.equals{
+      flex-basis: 50%;
+}
+
+.operator, .negative, .equals {
+      background: rgb(212, 235, 9);
+}
+
+.history{
+      width: 80%;
+      margin: 30px auto 0 auto;
+      overflow: scroll;
+}
+
+table{
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+}
+
+th, td{
+      text-align: center;
+      padding: 16px;
+}
+
+th{
+      background-color: rgb(212, 235, 9);
+      color: white;
+}
+
+tr:nth-child(even){
+      background-color: #d2d2d2;
+}
+@media screen and (max-width: 513px){
+      .display{
+            padding: 30px 5px;
+      }
+      .display h1{
+            font-size: 32px;
+      }
+      .card{
+            padding: 3px 0;
+      }
+      .button{
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+      }
+      .history{
+            width: 100%;
+      }
+}
